@@ -1,4 +1,4 @@
-﻿namespace MODRP_JobTaxi.Classes
+﻿namespace JobTaxi.Classes
 {
     public class JobTaxiConfig
     {

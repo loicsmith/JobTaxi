@@ -7,15 +7,15 @@ using ModKit.Helper;
 using ModKit.Interfaces;
 using ModKit.Internal;
 using ModKit.ORM;
-using MODRP_JobTaxi.Classes;
-using MODRP_JobTaxi.Functions;
+using JobTaxi.Classes;
+using JobTaxi.Functions;
 using Newtonsoft.Json;
 using SQLite;
 using System.Collections.Generic;
 using System.IO;
 using _menu = AAMenu.Menu;
 
-namespace MODRP_JobTaxi.Main
+namespace JobTaxi.Main
 {
 
     class Main : ModKit.ModKit

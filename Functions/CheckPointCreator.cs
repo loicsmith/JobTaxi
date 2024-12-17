@@ -6,7 +6,7 @@ using ModKit.Utils;
 using Newtonsoft.Json;
 using System.Linq;
 
-namespace MODRP_JobTaxi.Functions
+namespace JobTaxi.Functions
 {
     internal class CheckPointCreator
     {
@@ -39,7 +39,7 @@ namespace MODRP_JobTaxi.Functions
             float PosY = player.setup.transform.position.y;
             float PosZ = player.setup.transform.position.z;
 
-            panel.TextLines.Add("Veuillez confirmer la position de l'arrêt de bus");
+            panel.TextLines.Add("Veuillez confirmer la position de l'arrêt de taxi");
             panel.TextLines.Add("Position X : " + PosX);
             panel.TextLines.Add("Position Y : " + PosY);
             panel.TextLines.Add("Position Z : " + PosZ);

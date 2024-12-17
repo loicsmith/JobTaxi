@@ -1,7 +1,7 @@
 ﻿using ModKit.ORM;
 using SQLite;
 
-namespace MODRP_JobTaxi.Functions
+namespace JobTaxi.Functions
 {
     internal class OrmManager
     {

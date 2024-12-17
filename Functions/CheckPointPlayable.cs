@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace MODRP_JobTaxi.Functions
+namespace JobTaxi.Functions
 {
     internal class CheckPointPlayable
     {
@@ -99,22 +99,18 @@ namespace MODRP_JobTaxi.Functions
 
         public async void StartTaxiService(Player player)
         {
-            // Récupération des données des arrêts
             var Data = await OrmManager.JobTaxi_JobTaxiManager.QueryAll();
 
-            // Choisir deux arrêts aléatoires pour A et B
             int startIndex, endIndex;
             do
             {
                 startIndex = UnityEngine.Random.Range(0, Data.Count);
                 endIndex = UnityEngine.Random.Range(0, Data.Count);
-            } while (startIndex == endIndex); // S'assurer que les deux arrêts sont différents
+            } while (startIndex == endIndex);
 
-            // Récupérer les arrêts A et B
             var startStop = Data[startIndex];
             var endStop = Data[endIndex];
 
-            // Extraire les coordonnées
             float startX = startStop.PositionX;
             float startY = startStop.PositionY;
             float startE = startStop.PositionZ;
@@ -123,7 +119,6 @@ namespace MODRP_JobTaxi.Functions
             float endY = endStop.PositionY;
             float endE = endStop.PositionZ;
 
-            // Initialisation des checkpoints
             NVehicleCheckpoint[] checkpoints = new NVehicleCheckpoint[2];
 
             checkpoints[0] = new NVehicleCheckpoint(player.netId, new Vector3(startX, startY, startE), async (c, vId) =>
@@ -140,7 +135,6 @@ namespace MODRP_JobTaxi.Functions
 
                 player.setup.NetworkisFreezed = false;
 
-                // Création du checkpoint de destination
                 player.CreateVehicleCheckpoint(checkpoints[1]);
                 player.setup.TargetSetGPSTarget(new Vector3(endX, endY, endE));
 
@@ -167,7 +161,6 @@ namespace MODRP_JobTaxi.Functions
                 PlayerNetID.Remove(player.setup.netId);
             });
 
-            // Lancement du trajet
             player.CreateVehicleCheckpoint(checkpoints[0]);
             player.setup.TargetSetGPSTarget(new Vector3(startX, startY, startE));
 
