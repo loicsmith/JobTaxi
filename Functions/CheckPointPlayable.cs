@@ -129,11 +129,11 @@ namespace JobTaxi.Functions
                 player.setup.TargetDisableNavigation();
 
                 player.Notify("Taxi", "Votre client monte dans le taxi..", NotificationManager.Type.Info, 5f);
-                player.setup.NetworkisFreezed = true;
+                player.IsFreezed = true;
 
                 await Task.Delay(5000);
 
-                player.setup.NetworkisFreezed = false;
+                player.IsFreezed = false;
 
                 player.CreateVehicleCheckpoint(checkpoints[1]);
                 player.setup.TargetSetGPSTarget(new Vector3(endX, endY, endE));
@@ -149,12 +149,12 @@ namespace JobTaxi.Functions
                 player.setup.TargetDisableNavigation();
 
                 player.Notify("Taxi", "Les passagers descendent du taxi..", NotificationManager.Type.Info, 5f);
-                player.setup.NetworkisFreezed = true;
+                player.IsFreezed = true;
 
                 await Task.Delay(5000);
 
                 ReceiveMoney(player);
-                player.setup.NetworkisFreezed = false;
+                player.IsFreezed = false;
 
                 player.Notify("Taxi", "Le trajet est terminé. Merci pour votre service !", NotificationManager.Type.Success);
 
