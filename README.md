@@ -14,12 +14,13 @@ Plugin métier mettant en avant les chauffeurs de bus - Nova-Life
 
 ## Installation et configuration
 1. Téléchargez la dernière version :
-   - [BizBill](https://github.com/loicsmith/JobTaxi/releases/latest)
+   - [JobTaxi](https://github.com/loicsmith/JobTaxi/releases/latest)
    - [AAMenu & Modkit](https://github.com/Aarnow/NovaLife_ModKit-Releases/releases/latest) (dépendances nécessaires).
 2. Placez le plugin et les dépendances dans le dossier `plugins` de votre serveur.
 3. Redémarrez votre serveur et lancez le jeu.
 4. Configurez via AAMenu :
-   - **Administration > Plugins > BizBill** : Modifiez les paramètres nécessaires.
+   - **Administration > Plugins > JobTaxi** : Modifiez les paramètres nécessaires.
+   - **CheckpointCreator - JobTaxi** : Créez des points de prise en charge/dépot des clients.
 
 ---
 
