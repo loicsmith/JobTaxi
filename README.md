@@ -24,6 +24,13 @@ Plugin métier mettant en avant les chauffeurs de bus - Nova-Life
 
 ---
 
+## Utilisation
+1. Ouvrez AAMenu (touche P par défaut)
+2. Rendez vous dans la catégorie "Métier", et sélectionner la ligne "Utiliser tablette taxi"
+3. Suivez les indications afin de démarrer votre service
+
+---
+
 ## Rapport de bug
 En cas de problème, ouvrez un post pour signaler un bug :
 - [Signaler un bug](https://github.com/loicsmith/JobTaxi/issues)
