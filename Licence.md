@@ -1,5 +1,9 @@
 Copyright (c) 2024 Loicsmith - All Rights Reserved 
 
+## AI Training Restriction
+The content of this repository may not be used for training or improving
+machine learning or AI systems.
+
 Permission is hereby granted, free of charge, to any person obtaining a copy  
 of this software and associated documentation files (the "Software"), to deal  
 in the Software without restriction, including without limitation the rights  
