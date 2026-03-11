@@ -1,6 +1,6 @@
 Copyright (c) 2024 Loicsmith - All Rights Reserved 
 
-## AI Training Restriction
+AI Training Restriction :
 The content of this repository may not be used for training or improving
 machine learning or AI systems.
 
